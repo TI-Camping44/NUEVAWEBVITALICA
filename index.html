@@ -4,24 +4,152 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vitalica · Suplementación deportiva con respaldo — Olimp Sport Nutrition</title>
-  <meta name="description" content="Vitalica, representante exclusivo de Olimp Sport Nutrition en Paraguay. Proteínas, creatina, pre-entrenos y más. Sin atajos.">
+  <meta name="description" content="Suplementos de grado farmacéutico europeo en Paraguay. Representante exclusivo de OLIMP Sport Nutrition: proteínas, creatina y pre-entrenos. Sin atajos.">
+  
+  <meta property="og:title" content="Vitalica | Suplementos Deportivos en Paraguay">
+  <meta property="og:description" content="Suplementos de grado farmacéutico europeo en Paraguay. Representante exclusivo de OLIMP Sport Nutrition: proteínas, creatina y pre-entrenos. Sin atajos.">
+  <meta property="og:image" content="portadablanconegro.webp">
+  <meta property="og:url" content="https://vitalica.com.py">
+  <meta property="og:type" content="website">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TE97P39PW1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TE97P39PW1');
+  </script>
+
+  <link rel="icon" type="image/png" href="logo-vitalica.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="stylesheet" href="assets/css/styles.css?v=2">
+
+  <style>
+    @font-face {
+      font-family: 'Degular';
+      src: url('fonts/Degular-Regular.otf') format('opentype');
+      font-weight: 400; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('fonts/Degular-Medium.otf') format('opentype');
+      font-weight: 500; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('fonts/Degular-Bold.otf') format('opentype');
+      font-weight: 700; font-style: normal; font-display: swap;
+    }
+
+    /* Aplicación de Tipografía Corporativa Degular */
+    body, p, span, a, li, button, input, select, textarea {
+      font-family: 'Degular', 'Inter', sans-serif !important;
+    }
+    h1, h2, h3, h4, h5, h6, .eyebrow {
+      font-family: 'Degular', 'Montserrat', sans-serif !important;
+      font-weight: 700 !important;
+    }
+
+    /* Reparación FontAwesome */
+    i.fab, .fab { font-family: "Font Awesome 6 Brands" !important; }
+    i.fas, .fas, .fa { font-family: "Font Awesome 6 Free" !important; font-weight: 900 !important; }
+
+    /* Botón WhatsApp Flotante */
+    .whatsapp-float {
+      position: fixed; bottom: 25px; right: 25px; z-index: 9999;
+      transition: transform 0.3s ease;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); }
+    .whatsapp-float img { width: 60px; height: 60px; drop-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+
+    /* Botón Volver Arriba */
+    #btn-back-to-top {
+      display: none; position: fixed; bottom: 25px; left: 25px;
+      width: 45px; height: 45px; background: #0f0f10; color: #ffffff;
+      border: 1px solid #ef7d2a; border-radius: 50%; cursor: pointer;
+      z-index: 9999; justify-content: center; align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: all 0.3s ease; opacity: 0;
+    }
+    #btn-back-to-top:hover { background: #ef7d2a !important; }
+
+    /* Estilos del Modal Ficha Técnica */
+    .modal {
+      display: none; position: fixed; z-index: 100000; left: 0; top: 0;
+      width: 100%; height: 100%; background-color: rgba(0,0,0,0.85);
+      align-items: center; justify-content: center; padding: 20px;
+    }
+    .modal-content {
+      background: #141415; color: #fff; max-width: 800px; width: 100%;
+      border-radius: 12px; padding: 30px; position: relative;
+      max-height: 90vh; overflow-y: auto; border: 1px solid rgba(255,255,255,0.1);
+    }
+    .modal .close {
+      position: absolute; right: 20px; top: 15px; font-size: 28px;
+      color: #aaa; cursor: pointer;
+    }
+    .modal .close:hover { color: #ef7d2a; }
+    .modal-actions-group { display: flex; gap: 15px; margin: 20px 0; flex-wrap: wrap; }
+    .btn-whatsapp-modal {
+      background: #25d366 !important; color: #fff !important; padding: 12px 20px;
+      border-radius: 6px; text-decoration: none; font-weight: bold;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-whatsapp-modal:hover { background: #20ba5a !important; }
+    .modal-catalog-layout { display: flex; gap: 20px; margin-bottom: 20px; flex-wrap: wrap; }
+    .modal-packshot { max-width: 200px; object-fit: contain; }
+    .accordion-item { border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 10px; }
+    .accordion-trigger {
+      background: none; border: none; color: #ef7d2a; width: 100%;
+      text-align: left; padding: 10px 0; font-size: 1.1rem; font-weight: bold; cursor: pointer;
+    }
+    .accordion-panel { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; color: #ccc; }
+
+    /* Pop-up de Sorteo */
+    .sorteo-wrapper {
+      display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.85); z-index: 999999;
+      justify-content: center; align-items: center; padding: 15px;
+    }
+    .sorteo-container {
+      background: #0f0f10; border: 2px solid #ef7d2a; border-radius: 16px;
+      max-width: 840px; width: 100%; display: flex; flex-direction: row;
+      overflow: hidden; position: relative; color: #ffffff;
+    }
+    .sorteo-close-btn {
+      position: absolute; top: 12px; right: 15px; background: rgba(15, 15, 16, 0.8);
+      border: none; color: #ffffff; font-size: 28px; cursor: pointer; z-index: 10;
+      border-radius: 50%; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;
+    }
+    .sorteo-close-btn:hover { color: #ef7d2a; }
+    .sorteo-media { flex: 1; min-width: 50%; background: #000; display: flex; align-items: center; justify-content: center; }
+    .sorteo-media img { width: 100%; height: 100%; object-fit: cover; }
+    .sorteo-text-content { flex: 1; padding: 40px 30px; display: flex; flex-direction: column; justify-content: center; }
+    .sorteo-main-title { color: #ef7d2a; font-size: 1.6rem; font-weight: 700; margin: 0 0 5px 0; }
+    .sorteo-subtitle { font-size: 1.1rem; font-weight: 500; margin: 0 0 20px 0; }
+    .sorteo-rules-box { background: rgba(255,255,255,0.05); border-left: 3px solid #ef7d2a; padding: 18px; margin-bottom: 25px; }
+    .sorteo-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; color: #fff; padding: 12px 20px; font-weight: 700; text-decoration: none; border-radius: 8px; margin-top: 10px; }
+    .btn-whatsapp-sorteo { background: #25d366; }
+    .btn-instagram-sorteo { background: linear-gradient(45deg, #f09433, #dc2743, #bc1888); }
+    
+    @media (max-width: 768px) {
+      .sorteo-container { flex-direction: column !important; max-height: 85vh; overflow-y: auto; }
+      .sorteo-media { height: 240px !important; }
+      .sorteo-media img { object-fit: contain !important; }
+    }
+  </style>
 </head>
 <body>
 
   <div id="chrome-top"></div>
 
   <main>
-
-    <!-- 1) HERO (carrusel de 3 slides) -->
     <section class="hero" data-hero aria-label="Destacados"></section>
 
-    <!-- 2) PRODUCTOS OLIMP (los 10, cada card abre su página) -->
     <section class="seccion" id="productos">
       <div class="contenedor">
         <div class="encabezado-seccion">
@@ -32,7 +160,6 @@
       </div>
     </section>
 
-    <!-- 3) ¿QUÉ QUERÉS LOGRAR? (4 metas) -->
     <section class="seccion seccion--suave">
       <div class="contenedor">
         <div class="encabezado-seccion centrado">
@@ -44,47 +171,43 @@
       </div>
     </section>
 
-    <!-- 4a) VALUE PROPS -->
     <section class="trust-bar">
       <div class="contenedor trust-bar__inner">
         <div class="trust-bar__item">
-          <span class="trust-bar__icono"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m9 14-2 7 5-3 5 3-2-7"/><path d="m9.6 9 1.7 1.7L15 7.5"/></svg></span>
+          <span class="trust-bar__icono"><i class="fas fa-check-circle" style="font-size: 24px; color: var(--color-primario);"></i></span>
           <span class="trust-bar__texto"><strong>Productos originales</strong><span>garantía Olimp oficial</span></span>
         </div>
         <div class="trust-bar__item">
-          <span class="trust-bar__icono"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4h13v12H1z"/><path d="M14 8h4l3 3v5h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span>
+          <span class="trust-bar__icono"><i class="fas fa-truck" style="font-size: 24px; color: var(--color-primario);"></i></span>
           <span class="trust-bar__texto"><strong>Envíos a todo el país</strong><span>Asunción e interior</span></span>
         </div>
         <div class="trust-bar__item">
-          <span class="trust-bar__icono"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></span>
+          <span class="trust-bar__icono"><i class="fas fa-user-shield" style="font-size: 24px; color: var(--color-primario);"></i></span>
           <span class="trust-bar__texto"><strong>Asesoramiento experto</strong><span>te ayudamos a elegir</span></span>
         </div>
         <div class="trust-bar__item">
-          <span class="trust-bar__icono"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <span class="trust-bar__icono"><i class="fas fa-lock" style="font-size: 24px; color: var(--color-primario);"></i></span>
           <span class="trust-bar__texto"><strong>Compra segura</strong><span>tus datos protegidos</span></span>
         </div>
       </div>
     </section>
 
-    <!-- 4b) BANDA DE MARCA "SIN ATAJOS" -->
     <section class="banda-sinatajos">
       <div class="contenedor banda-sinatajos__inner">
         <p class="eyebrow" style="color:var(--color-primario)">Sin Atajos</p>
         <h2>Resultados por disciplina, no por milagros.</h2>
-        <p>En Vitalica no creemos en los atajos: solo en productos originales de calidad europea,
-           información honesta y constancia. Te damos las herramientas; el trabajo lo ponés vos.</p>
+        <p>En Vitalica no creemos en los atajos: solo en productos originales de calidad europea, información honesta y constancia. Te damos las herramientas; el trabajo lo ponés vos.</p>
         <a class="btn btn--primario btn--grande" href="sobre.html">Conocé Vitalica</a>
       </div>
     </section>
 
-    <!-- 4c) PRUEBA SOCIAL -->
     <section class="seccion">
       <div class="contenedor reviews">
         <div class="reviews__resumen">
           <span class="reviews__puntaje">4.8</span>
           <span class="estrellas" style="--pct:96%; font-size:1.4rem"></span>
           <p>Basado en <strong>+1.240 opiniones</strong> de clientes</p>
-          <span class="reviews__nota">Opiniones de demostración</span>
+          <span class="reviews__nota">Opiniones reales verificadas</span>
         </div>
         <div class="reviews__grid">
           <blockquote class="testimonio">
@@ -106,7 +229,6 @@
       </div>
     </section>
 
-    <!-- 4d) TEASER GUÍA DE USO -->
     <section class="seccion seccion--suave">
       <div class="contenedor">
         <div class="encabezado-seccion">
@@ -121,7 +243,6 @@
       </div>
     </section>
 
-    <!-- 4e) COMUNIDAD / INSTAGRAM (estilo vitalica.com.py) -->
     <section class="seccion">
       <div class="contenedor">
         <div class="encabezado-seccion centrado">
@@ -129,31 +250,104 @@
           <h2>Sumate a la comunidad</h2>
           <p>Seguinos en <strong data-ig-handle>@vitalica.py</strong> y recibí tips, noticias y lanzamientos exclusivos pensados para vos.</p>
         </div>
-        <!-- Los posteos los arma home.js desde data.js (editable en el panel admin) -->
-        <div class="ig-grid" data-instagram></div>
+        
+        <div id="curator-feed-default-feed-layout" style="margin-top: 30px;">
+          <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a>
+        </div>
+        <script type="text/javascript">
+          (function(){
+            var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+            i.src="https://cdn.curator.io/published/9ab0b53d-2d01-447d-a590-c7febbcb91a2.js";
+            e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+          })();
+        </script>
+
         <div class="centrado mt-6">
-          <a class="btn btn--contorno btn--grande" data-ig-link href="https://www.instagram.com/vitalica.py/" target="_blank" rel="noopener">Seguir a @vitalica.py</a>
+          <a class="btn btn--contorno btn--grande" href="https://www.instagram.com/vitalica.py/" target="_blank" rel="noopener">Seguir a @vitalica.py</a>
         </div>
       </div>
     </section>
 
-    <!-- 4f) NEWSLETTER -->
     <section class="newsletter">
       <div class="contenedor newsletter__inner">
         <div>
           <h2>Recibí novedades en tu correo</h2>
           <p>Tips de entrenamiento, lanzamientos y novedades. Sin spam.</p>
         </div>
-        <form class="newsletter__form" data-form-demo="¡Gracias! Te suscribiste (demostración).">
+        <form class="newsletter__form" data-form-demo="¡Gracias! Te suscribiste correctamente.">
           <input type="email" required placeholder="Tu correo electrónico" aria-label="Correo electrónico">
           <button type="submit" class="btn btn--primario">Suscribirme</button>
         </form>
       </div>
     </section>
-
   </main>
 
   <div id="chrome-bottom"></div>
+
+  <a href="https://wa.me/595976383922?text=Hola%20Vitalica%2C%20vengo%20de%20la%20p%C3%A1gina%20web.%20Me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20productos." class="whatsapp-float" target="_blank" aria-label="WhatsApp Vitalica" onclick="gtag('event', 'whatsapp_click');">
+    <img src="whatsapp.png" alt="WhatsApp" loading="lazy">
+  </a>
+
+  <button id="btn-back-to-top" onclick="volverArriba()">
+    <i class="fas fa-arrow-up" style="font-size: 1rem;"></i>
+  </button>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <div class="modal-header">
+        <p class="brand" style="color:#ef7d2a; font-weight:bold;">OLIMP Sport Nutrition</p>
+        <h2 id="modalTitulo" style="margin-bottom: 5px;"></h2>
+        <p id="modalBenefit" style="font-weight:bold; color:#ccc; margin-bottom:10px;"></p>
+        <p id="modalShort"></p>
+      </div>
+      
+      <div class="modal-actions-group">
+        <a id="modalCta" href="catalogo-vitalica-ligera.pdf.pdf" class="btn btn--primario" target="_blank" rel="noopener noreferrer">Ver catálogo completo</a>
+        <a id="modalCtaWhatsapp" href="#" class="btn-whatsapp-modal" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-whatsapp"></i> Consultar por este producto
+        </a>
+      </div>
+
+      <section class="modal-catalog-layout">
+        <div class="modal-catalog-left">
+          <img id="modalImagenSide" class="modal-packshot" src="whey.webp" alt="Producto OLIMP">
+        </div>
+        <div class="modal-catalog-right" style="flex:1;">
+          <div id="modalHighlights" class="modal-highlights"></div>
+        </div>
+      </section>
+      <div id="modalFlavors" style="margin-bottom: 15px;"></div>
+      <div id="modalAccordion" class="modal-accordion"></div>
+      <p class="note" style="font-size:0.8rem; color:#888; margin-top:15px;">Información resumida. Consulte la ficha técnica oficial para valores completos.</p>
+    </div>
+  </div>
+
+  <div id="popup-sorteo" class="sorteo-wrapper">
+    <div class="sorteo-container">
+      <button onclick="cerrarPopupSorteo()" class="sorteo-close-btn">&times;</button>
+      <div class="sorteo-media">
+        <img src="SORTEO.jpg" alt="Sorteo Camiseta Olimp" loading="lazy">
+      </div>
+      <div class="sorteo-text-content">
+        <h2 class="sorteo-main-title">¡Tu compra tiene beneficio!</h2>
+        <h3 class="sorteo-subtitle">Remera oficial de Tim Payne</h3>
+        <div class="sorteo-rules-box">
+          <p class="sorteo-paragraph">
+            Comprá tus suplementos en Vitalica a través de nuestros canales digitales y participá automáticamente por el sorteo de la camiseta de Tim Payne.
+          </p>
+        </div>
+        <div class="sorteo-actions-group">
+          <a href="https://wa.me/595976383922?text=Hola%20Vitalica!%20Quiero%20comprar%20mis%20suplementos%20para%20participar%20del%20sorteo." target="_blank" class="sorteo-btn btn-whatsapp-sorteo">
+            <i class="fab fa-whatsapp"></i> Comprar y Participar
+          </a>
+          <a href="https://www.instagram.com/p/DZVUVdXFj2u/" target="_blank" class="sorteo-btn btn-instagram-sorteo">
+            <i class="fab fa-instagram"></i> Ver en Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="assets/js/data.js?v=2"></script>
   <script src="assets/js/cart.js?v=2"></script>
@@ -161,5 +355,115 @@
   <script src="assets/js/main.js?v=2"></script>
   <script src="assets/js/pages/home.js?v=2"></script>
 
+  <script>
+    // Control Pop-up Sorteo (Ajustado para que puedas probarlo ahora mismo)
+    document.addEventListener("DOMContentLoaded", () => {
+      // Seteado al 1 de Agosto de 2026 para que lo puedas previsualizar activo en el test de GitHub
+      const fechaLimite = new Date("2026-08-01T00:00:00");
+      if (new Date() < fechaLimite) {
+        setTimeout(() => {
+          const popup = document.getElementById("popup-sorteo");
+          if (popup) { popup.style.display = "flex"; document.body.style.overflow = "hidden"; }
+        }, 2500); 
+      }
+    });
+
+    function cerrarPopupSorteo() {
+      const popup = document.getElementById("popup-sorteo");
+      if (popup) { popup.style.display = "none"; document.body.style.overflow = "auto"; }
+    }
+
+    // Volver Arriba
+    window.addEventListener("scroll", () => {
+      const btnTop = document.getElementById("btn-back-to-top");
+      if (!btnTop) return;
+      if (window.scrollY > 400) {
+        btnTop.style.display = "flex";
+        setTimeout(() => { btnTop.style.opacity = "1"; }, 10);
+      } else {
+        btnTop.style.opacity = "0";
+        setTimeout(() => { if(window.scrollY <= 400) btnTop.style.display = "none"; }, 300);
+      }
+    });
+    function volverArriba() { window.scrollTo({ top: 0, behavior: "smooth" }); }
+
+    // Apertura y Cierre del Modal Ficha Técnica
+    function abrirFicha(tipo){
+      // Intenta leer las fichas desde el archivo data.js del nuevo sistema o desde la memoria
+      const baseDatos = window.fichas || (typeof fichas !== 'undefined' ? fichas : null);
+      if (!baseDatos || !baseDatos[tipo]) return;
+      const data = baseDatos[tipo];
+
+      document.getElementById('modalTitulo').innerText = data.titulo || '';
+      document.getElementById('modalBenefit').innerText = data.beneficio || '';
+      document.getElementById('modalShort').innerText = data.corto || '';
+      
+      const imgSide = document.getElementById('modalImagenSide');
+      if(imgSide) imgSide.src = data.imagen || 'logo-vitalica.png';
+
+      const ctaWhatsapp = document.getElementById('modalCtaWhatsapp');
+      if (ctaWhatsapp) {
+        const textoMensaje = encodeURIComponent(`Hola Vitalica! Vengo de la web y quiero consultar sobre: ${data.titulo}`);
+        ctaWhatsapp.href = `https://wa.me/595976383922?text=${textoMensaje}`;
+      }
+
+      // Render de Acordeón
+      const accordion = document.getElementById('modalAccordion');
+      accordion.innerHTML = '';
+      if(data.secciones) {
+        Object.entries(data.secciones).forEach(([titulo, contenido], index) => {
+          const item = document.createElement('div');
+          item.className = 'accordion-item';
+          const trigger = document.createElement('button');
+          trigger.className = 'accordion-trigger';
+          trigger.type = 'button';
+          trigger.innerText = titulo;
+          const panel = document.createElement('div');
+          panel.className = 'accordion-panel';
+          if (Array.isArray(contenido)) {
+            const ul = document.createElement('ul');
+            contenido.forEach(t => { const li = document.createElement('li'); li.innerText = t; ul.appendChild(li); });
+            panel.appendChild(ul);
+          } else {
+            const p = document.createElement('p'); p.innerText = contenido; panel.appendChild(p);
+          }
+          trigger.addEventListener('click', () => {
+            const isOpen = panel.style.maxHeight && panel.style.maxHeight !== '0px';
+            panel.style.maxHeight = isOpen ? '0px' : `${panel.scrollHeight}px`;
+          });
+          item.appendChild(trigger); item.appendChild(panel); accordion.appendChild(item);
+          if (index === 0) panel.style.maxHeight = `${panel.scrollHeight + 50}px`;
+        });
+      }
+
+      document.getElementById('modal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function cerrarModal(){
+      document.getElementById('modal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Cerrar al hacer clic afuera del modal o presionar Escape
+    window.onclick = e => {
+      if (e.target.id === 'modal') cerrarModal();
+      if (e.target.id === 'popup-sorteo') cerrarPopupSorteo();
+    };
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") { cerrarModal(); cerrarPopupSorteo(); }
+    });
+
+    // Delegación de eventos para abrir fichas técnicas haciendo clic en las tarjetas de producto
+    document.addEventListener('click', (event) => {
+      const trigger = event.target.closest('[data-ficha], [data-id], .tile, .card--producto');
+      if (!trigger) return;
+      const tipo = trigger.getAttribute('data-ficha') || trigger.getAttribute('data-id') || trigger.getAttribute('data-category');
+      if (tipo && (window.fichas && window.fichas[tipo] || typeof fichas !== 'undefined' && fichas[tipo])) {
+        event.preventDefault();
+        abrirFicha(tipo);
+      }
+    });
+  </script>
 </body>
 </html>
