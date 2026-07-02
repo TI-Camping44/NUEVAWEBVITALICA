@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto · Vitalica</title>
+  <meta name="description" content="Detalle de producto Olimp en Vitalica.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css?v=2">
+</head>
+<body>
+
+  <div id="chrome-top"></div>
+
+  <main>
+    <!-- Zona de compra (la arma producto.js según el ?id=) -->
+    <section class="seccion">
+      <div class="contenedor">
+        <nav class="breadcrumb" data-breadcrumb aria-label="Migas de pan"></nav>
+        <div class="producto" data-producto></div>
+      </div>
+    </section>
+
+    <!-- Secciones de marketing (beneficios, ingredientes, etc.) -->
+    <div data-producto-marketing></div>
+
+    <!-- Productos relacionados -->
+    <section class="seccion seccion--suave" data-relacionados-wrap hidden>
+      <div class="contenedor">
+        <div class="encabezado-seccion"><h2>También te puede interesar</h2></div>
+        <div class="grilla grilla--productos" data-relacionados></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="chrome-bottom"></div>
+
+  <script src="assets/js/data.js?v=2"></script>
+  <script src="assets/js/cart.js?v=2"></script>
+  <script src="assets/js/components.js?v=2"></script>
+  <script src="assets/js/main.js?v=2"></script>
+  <script src="assets/js/pages/producto.js?v=2"></script>
+
+</body>
+</html>
