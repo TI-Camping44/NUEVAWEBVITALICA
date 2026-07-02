@@ -693,3 +693,139 @@ const Datos = {
     ov.tiendas.forEach(function (t) { VITALICA_TIENDAS.push(t); });
   }
 })();
+// Catálogo Real de Olimp Sport Nutrition para Vitalica
+const fichas = {
+  whey: {
+    titulo: "Whey Protein Complex 100%",
+    beneficio: "Tecnología CFM y fórmula doble WPC + WPI para recuperación.",
+    corto: "Proteína premium con textura gourmet y estándar farmacéutico.",
+    imagen: "OLIMP%20PRODUCTOS/WheyProteinComplex-ZIP-2270g-universal-0014-ol-5-0001-66a2447fa4762.webp",
+    secciones: {
+      "Descripción": "Proteína con filtrado de flujo cruzado (CFM) que maximiza la pureza y conserva las fracciones de crecimiento muscular.",
+      "Beneficios": ["Tecnología CFM superior sin procesos químicos.","Fórmula doble WPC + WPI para absorción eficiente.","Textura cremosa tipo batido real."],
+      "Ingredientes": "Proteína de suero concentrada (WPC) y aislada (WPI), saborizantes.",
+      "Modo de uso": "Mezclar 1 porción (35 g) con agua o leche.",
+      "Ficha técnica": "Por porción (35 g): 26 g de proteínas, 3,9 g de carbohidratos y 1,5 g de grasas."
+    }
+  },
+  iso: {
+    titulo: "Iso Plus Powder",
+    beneficio: "Powder isotonic sport drink con L-carnitina y L-glutamina.",
+    corto: "Apoyo de hidratación y rendimiento durante el entrenamiento.",
+    imagen: "iso.webp",
+    secciones: {
+      "Descripción": "Bebida isotónica en polvo diseñada para hidratación y vitalidad con perfil completo de soporte deportivo.",
+      "Beneficios": ["Reposición de electrolitos y prevención de calambres.","Energía limpia y vitalidad constante.","L-carnitina y L-glutamina para rendimiento y recuperación."],
+      "Ingredientes": "Carbohidratos, electrolitos, vitaminas, L-carnitina, L-glutamina.",
+      "Modo de uso": "Disolver 1 porción (17,5 g) en 250 ml de agua.",
+      "Ficha técnica": "Por porción (17,5 g): 60 kcal, 18 g carbohidratos, 0,29 g sal."
+    }
+  },
+  redweiler: {
+    titulo: "Redweiler",
+    beneficio: "Pre workout con Armageddon Pump Formula y Berserker blend.",
+    corto: "Matriz Red Fury para energía y activación intensa.",
+    imagen: "red.webp",
+    secciones: {
+      "Descripción": "Pre-workout orientado a potencia, enfoque y condición de alta precisión en sesiones exigentes.",
+      "Beneficios": ["Beta-alanina 2200 mg y creatina 1845 mg por porción.","Citrulina + AAKG para vasodilatación intensa.","Cafeína 200 mg y matriz térmica con cayena y piperina."],
+      "Ingredientes": "Beta-alanina, creatina, L-arginina AAKG, malato de citrulina, cafeína, pimienta de cayena y pimienta negra.",
+      "Modo de uso": "Tomar 1 porción (12 g) antes del entrenamiento.",
+      "Ficha técnica": "Por porción (12 g): beta-alanina 2200 mg, creatina total 1845 mg, cafeína 200 mg."
+    }
+  },
+  knockout: {
+    titulo: "Knockout 2.0",
+    beneficio: "Mind blowing pre-workout con energía real.",
+    corto: "Fórmula sin creatina para enfoque y activación térmica.",
+    imagen: "OLIMP%20PRODUCTOS/Knockout-2-0-citrus-punch-305g-UK-amazon-01-png0000-66c2fbe8a26be.webp",
+    secciones: {
+      "Descripción": "Pre-workout para energía limpia, resistencia y enfoque mental con activación térmica.",
+      "Beneficios": ["Cafeína 200 mg para energía real.","Beta-alanina y taurina para resistencia sostenida.","Termogénesis con capsaicina y piperina."],
+      "Ingredientes": "Beta-alanina, L-arginina, L-citrulina, taurina, cafeína, pimienta de cayena, pimienta negra.",
+      "Modo de uso": "Tomar 1 porción (6,1 g) antes del entrenamiento.",
+      "Ficha técnica": "Por porción (6,1 g): beta-alanina 2100 mg, L-arginina 1100 mg, L-citrulina 600 mg, taurina 600 mg, cafeína 200 mg."
+    }
+  },
+  creatina: {
+    titulo: "Creatine Monohydrate",
+    beneficio: "Monohidrato de creatina con micronización 200 mesh.",
+    corto: "Estándar farmacéutico europeo para fuerza y potencia.",
+    imagen: "creatine.webp",
+    secciones: {
+      "Descripción": "Creatina monohidrato en polvo con fórmula 200 mesh de micronización para disolución eficiente.",
+      "Beneficios": ["Micronización 200 mesh para máxima absorción.","Apoya fuerza explosiva y potencia.","Controles farmacéuticos de pureza."],
+      "Ingredientes": "Creatina monohidrato micronizada.",
+      "Modo de uso": "Tomar 1 porción (3,4 g) al día con agua.",
+      "Ficha técnica": "Por porción (3,4 g): 3,4 g de creatina, 0 kcal."
+    }
+  },
+  amino: {
+    titulo: "Beta Alanina Xplode",
+    beneficio: "Sistema de transporte ácido intra y extracelular.",
+    corto: "Beta alanina con vitamina B6, bicarbonato y L-histidina.",
+    imagen: "beta.webp",
+    secciones: {
+      "Descripción": "Beta alanina Xplode Powder con enfoque en resistencia y apoyo anti-fatiga durante el esfuerzo.",
+      "Beneficios": ["Beta-alanina y L-histidina para crear carnosina.","Buffers extracelulares con bicarbonato para reducir fatiga.","Vitamina B6 para optimizar la absorción."],
+      "Ingredientes": "Beta-alanina, L-histidina, bicarbonato de sodio, sales de potasio, vitamina B6.",
+      "Modo de uso": "Mezclar 1 porción (9,6 g) con agua.",
+      "Ficha técnica": "Por porción (9,6 g): beta-alanina 1600 mg, vitamina B6 0,98 mg, L-histidina 80 mg, bicarbonato de sodio 400 mg."
+    }
+  },
+  vitaminSport: {
+    titulo: "Vita-min Multiple Sport",
+    beneficio: "Vitaminas y minerales en blísteres farmacéuticos.",
+    corto: "Tecnología Vita-Plex y Chela-Min para absorción eficiente.",
+    imagen: "vitamin.webp",
+    secciones: {
+      "Descripción": "Sistema químicamente estable de vitaminas y minerales para soporte diario del rendimiento.",
+      "Beneficios": ["Vita-Plex con complejo B completo.","Minerales Albion quelados de alta absorción.","Extractos detox con alcachofa, ortiga y té verde."],
+      "Ingredientes": "Vitaminas A, D, E, C y complejo B, minerales quelados, extractos de alcachofa, ortiga y té verde, ALA, pimienta negra.",
+      "Modo de uso": "Tomar 1 cápsula al día.",
+      "Ficha técnica": "Por porción (1 cápsula): Vit A 800 µg, Vit D 10 µg, Vit E 24 mg, Vit C 290 mg, Vit B1 19,4 mg, Vit B2 19,6 mg."
+    }
+  },
+  vitaminSport40: {
+    titulo: "Vita-min Multiple Sport 40+",
+    beneficio: "Fórmula específica Master 40+ para entrenamiento adulto.",
+    corto: "Con KSM-66, saw palmetto y minerales quelados Albion®.",
+    imagen: "OLIMP PRODUCTOS/Vita-Min-Multiple-Sport-40-kartonik-PL-EN-0006-0001-66a9f462ddf4d.webp",
+    secciones: {
+      "Descripción": "Multivitamínico 40+ orientado a vitalidad, energía y recuperación para entrenamiento sostenido.",
+      "Beneficios": ["Ashwagandha KSM-66 y saw palmetto para soporte hormonal.","Minerales Albion quelados para absorción premium.","Vitaminas B y antioxidantes para combatir fatiga."],
+      "Ingredientes": "Vitaminas, minerales quelados, extracto de saw palmetto, ashwagandha KSM-66.",
+      "Modo de uso": "Tomar 2 cápsulas al día.",
+      "Ficha técnica": "Por porción (2 cápsulas): Vit C 290 mg, Vit B1 19,4 mg, Vit B6 18,8 mg, Vit B12 23 µg, saw palmetto 100 mg, ashwagandha 50 mg."
+    }
+  },
+  goldOmega: {
+    titulo: "Gold Omega 3 Sport Edition",
+    beneficio: "Omega-3 altamente concentrado Sport Edition.",
+    corto: "Aceite de pescado 1000 mg con EPA y DHA.",
+    imagen: "OLIMP PRODUCTOS/Gold-Omega-3-SportEdition-kartonik-120caps-EN-SE-FR-ES-IT-PL-0022-0001-66d6d15b6fb69.webp",
+    secciones: {
+      "Descripción": "Fórmula de omega-3 concentrada para soporte cardiovascular, cerebral y deportivo.",
+      "Beneficios": ["EPA 330 mg y DHA 220 mg por cápsula.","Protección blíster para frescura total.","Apoyo antiinflamatorio y cognitivo."],
+      "Ingredientes": "Aceite de pescado omega-3, vitamina E.",
+      "Modo de uso": "Tomar 1 cápsula diaria con comida.",
+      "Ficha técnica": "Por porción: aceite de pescado 1000 mg, EPA 330 mg, DHA 220 mg, vitamina E 12 mg."
+    }
+  },
+  arthroblock: {
+    titulo: "Arthroblock Forte",
+    beneficio: "Funcionamiento adecuado de las articulaciones.",
+    corto: "Con glucosamina, condroitina, ácido hialurónico y extractos.",
+    imagen: "OLIMP PRODUCTOS/Arthroblock-Forte-OSN-kartonik-EN-PL-0006-ol-4-0001-67d949c0c9f20_1.webp",
+    secciones: {
+      "Descripción": "Suplemento articular con componentes estructurales y soporte de confort para movilidad diaria.",
+      "Beneficios": ["Glucosamina sulfato 1000 mg y condroitina 200 mg.","Ácido hialurónico 50 mg para lubricación.","Boswellia, jengibre, vitamina C y manganeso."],
+      "Ingredientes": "Sulfato de glucosamina, sulfato de condroitina, ácido hialurónico, boswellia, jengibre, vitamina C, manganeso.",
+      "Modo de uso": "Tomar según porción indicada en el envase.",
+      "Ficha técnica": "Por porción: glucosamina 1000 mg, condroitina 200 mg, ácido hialurónico 50 mg, boswellia 100 mg, jengibre 100 mg."
+    }
+  }
+};
+
+// Hacer la variable accesible en la ventana global del navegador
+window.fichas = fichas;
